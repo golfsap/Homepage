@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  border: 1px solid black;
+  max-width: 750px;
+  margin: 24px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+h1 {
+  text-wrap: wrap;
+  position: absolute;
+  width: 300px;
+  color: white;
+  bottom: 7px;
+  left: 11px;
+  width: 270px;
+}
+
+/* picture {
+  height: 0;
+} */
+img {
+  border: 1px solid red;
+  width: 270px;
+}
+
+.about-me {
+  height: 270px;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 5px gray;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.about-me h2 {
+  padding-top: 10px;
+}
+
+.links-container {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.my-work {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  max-width: 750px;
+  /* align-items: center; */
+  border: 1px solid grey;
+  width: 100vw;
+  background-color: blue;
+}
+
+.card-container {
+  border: 1px solid lightblue;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+}
+
+.card {
+  border: 1px solid black;
+  height: 357px;
+  width: 325px;
+}
+
+.project-pic {
+  height: 160px;
+  background-color: purple;
+  color: white;
+}
+
+.project-info {
+  border: 1px solid purple;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: antiquewhite;
+  width: 100vw;
+}
