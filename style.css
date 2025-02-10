@@ -70,7 +70,7 @@ img {
   margin: 24px;
   max-width: 750px;
   /* align-items: center; */
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   width: 100vw;
   background-color: blue;
 }
@@ -78,30 +78,40 @@ img {
 .card-container {
   border: 1px solid lightblue;
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  grid-gap: 50px 25px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 }
 
 .card {
-  border: 1px solid black;
-  height: 357px;
-  width: 325px;
+  border: 1px solid white;
+  background-color: white;
+  height: 257px;
+  width: 230px;
 }
 
 .project-pic {
   height: 160px;
   background-color: purple;
   color: white;
+  text-align: center;
+  font-size: 150%;
 }
 
 .project-info {
   border: 1px solid purple;
-  height: 100%;
+  padding: 5px 10px;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
   background-color: antiquewhite;
   width: 100vw;
+  margin-top: 48px;
 }
