@@ -51,7 +51,7 @@ h1 {
   width: 300px;
   color: white;
   bottom: 7px;
-  left: 11px;
+  left: 36px;
   width: 270px;
 }
 
@@ -93,40 +93,52 @@ h1 {
 .my-work {
   display: flex;
   flex-direction: column;
-  margin: 24px;
+  margin: 24px auto;
+  margin-top: 48px;
   max-width: 750px;
-  /* align-items: center; */
-  /* border: 1px solid grey; */
-  width: 100vw;
-  background-color: blue;
+  width: 100%;
+}
+
+.my-work h2 {
+  margin-bottom: 12px;
 }
 
 .card-container {
-  border: 1px solid lightblue;
+  /* border: 1px solid lightblue; */
   display: grid;
-  grid-gap: 50px 25px;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 48px 27px;
+  justify-content: center;
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .card {
-  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   background-color: white;
-  height: 257px;
-  width: 230px;
+  height: 270px;
+  width: 100%;
 }
 
 .project-pic {
   height: 160px;
   background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-secondary);
   color: white;
   text-align: center;
   font-size: 150%;
 }
 
 .project-info {
-  border: 1px solid purple;
+  flex-grow: 1;
+  /* border: 1px solid purple; */
   padding: 5px 10px;
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
 }
@@ -134,16 +146,31 @@ h1 {
 .card-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.card-title {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 16px;
 }
 
 footer {
   background-color: antiquewhite;
   width: 100vw;
   margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-content {
   max-width: 750px;
   border: 1px solid black;
-  margin-inline: auto;
+  /* margin-inline: auto; */
+  display: flex;
+  flex-direction: row;
+  height: 300px;
 }
