@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Merriweather", serif;
+  --font-size-base: 14px;
+  --font-size-heading: 2rem;
+  --font-size-body: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +15,18 @@
 }
 
 body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+h1,
+h2 {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-heading);
 }
 
 main {
@@ -17,7 +36,7 @@ main {
 }
 
 header {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   max-width: 750px;
   margin: 24px;
   display: flex;
@@ -26,6 +45,7 @@ header {
 }
 
 h1 {
+  font-size: 1.5rem;
   text-wrap: wrap;
   position: absolute;
   width: 300px;
@@ -35,18 +55,24 @@ h1 {
   width: 270px;
 }
 
-/* picture {
-  height: 0;
-} */
-img {
-  border: 1px solid red;
+.portrait picture,
+.portrait img {
+  display: block;
+}
+
+.portrait img {
+  /* border: 1px solid red; */
+  /* vertical-align: top; */
   width: 270px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  /* border-radius: 2px; */
 }
 
 .about-me {
   height: 270px;
-  border: 1px solid grey;
-  box-shadow: 2px 2px 5px gray;
+  /* border: 1px solid grey; */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -114,4 +140,10 @@ footer {
   background-color: antiquewhite;
   width: 100vw;
   margin-top: 48px;
+}
+
+.footer-content {
+  max-width: 750px;
+  border: 1px solid black;
+  margin-inline: auto;
 }
