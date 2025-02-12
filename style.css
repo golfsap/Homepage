@@ -89,8 +89,18 @@ h1 {
 
 .links-container {
   display: flex;
-  gap: 5px;
+  align-items: center;
+  gap: 7px;
+  /* text-decoration: none; */
+}
+
+.links-container img {
+  height: 24px;
+  /* width: 16px; */
+}
+.about-me .links-container {
   justify-content: flex-end;
+  margin-top: 7px;
 }
 
 .my-work {
@@ -157,6 +167,17 @@ h1 {
   font-weight: 600;
 }
 
+.card-links {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  gap: 5px;
+}
+
+.card-links img {
+  height: 18px;
+}
+
 .card-body {
   font-size: 13px;
 }
@@ -202,7 +223,15 @@ footer {
 }
 
 .phone-and-email a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   text-decoration: none;
+  color: #333;
+}
+
+.phone-and-email img {
+  height: 21px;
 }
 
 .contact-picture img {
