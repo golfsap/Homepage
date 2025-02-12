@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --font-primary: "Inter", sans-serif;
+  --font-primary: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-secondary: "Merriweather", serif;
-  --font-size-base: 14px;
+  --font-size-base: 16px;
   --font-size-heading: 2rem;
-  --font-size-body: 1rem;
+  /* --font-size-body: 1rem; */
+  --line-height-body: 1.5;
+  --line-height-heading: 1.3;
+  --letter-spacing-heading: 0.5px;
+
+  --background-color: #4287f5;
 }
 
 * {
@@ -17,6 +22,7 @@
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
   color: #333;
   display: flex;
   flex-direction: column;
@@ -27,6 +33,8 @@ h1,
 h2 {
   font-family: var(--font-secondary);
   font-size: var(--font-size-heading);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
 }
 
 main {
@@ -36,7 +44,6 @@ main {
 }
 
 header {
-  /* border: 1px solid black; */
   max-width: 750px;
   margin: 24px;
   display: flex;
@@ -46,6 +53,7 @@ header {
 
 h1 {
   font-size: 1.5rem;
+  font-weight: 400;
   text-wrap: wrap;
   position: absolute;
   width: 300px;
@@ -61,21 +69,16 @@ h1 {
 }
 
 .portrait img {
-  /* border: 1px solid red; */
-  /* vertical-align: top; */
   width: 270px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-  /* border-radius: 2px; */
 }
 
 .about-me {
   height: 270px;
-  /* border: 1px solid grey; */
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: space-between;
   padding: 20px;
 }
@@ -104,7 +107,6 @@ h1 {
 }
 
 .card-container {
-  /* border: 1px solid lightblue; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 48px 27px;
@@ -153,12 +155,14 @@ h1 {
 .card-title {
   font-family: var(--font-secondary);
   font-weight: 600;
-  font-style: semi-bold;
-  font-size: 16px;
+}
+
+.card-body {
+  font-size: 13px;
 }
 
 footer {
-  background-color: antiquewhite;
+  background-color: var(--background-color);
   width: 100vw;
   margin-top: 48px;
   display: flex;
@@ -168,9 +172,41 @@ footer {
 
 .footer-content {
   max-width: 750px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* margin-inline: auto; */
   display: flex;
   flex-direction: row;
-  height: 300px;
+  gap: 16px;
+  /* height: 400px; */
+  padding: 32px 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container h2 {
+  margin-bottom: 15px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* color: white; */
+}
+
+.phone-and-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-and-email a {
+  text-decoration: none;
+}
+
+.contact-picture img {
+  /* width: 400px; */
+  /* border-radius: 4px; */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
