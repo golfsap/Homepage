@@ -231,7 +231,7 @@ footer {
   display: block;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 870px) {
   header {
     max-width: 550px;
     display: block;
@@ -268,6 +268,7 @@ footer {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 550px;
+    /* margin: 0 24px; */
   }
 
   .footer-content {
@@ -275,6 +276,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     max-width: 550px;
     grid-gap: 27px;
+    margin: 0 24px;
   }
 
   .contact-container {
@@ -286,7 +288,7 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 520px) {
   header {
     max-width: 270px;
     margin: 24px;
@@ -301,7 +303,7 @@ footer {
   }
 
   .portrait img {
-    width: 210px;
+    width: 220px;
   }
 
   h1 {
@@ -309,7 +311,7 @@ footer {
     color: white;
     /* height: auto; */
     /* margin: 0; */
-    top: 180px;
+    top: 190px;
     left: 50px;
     font-size: 16px;
     /* box-sizing: border-box; */
@@ -363,5 +365,27 @@ footer {
 
   .card-body {
     font-size: 14px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    margin: 0;
+  }
+
+  .contact-container {
+    padding: 24px;
+    padding-bottom: 48px;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .contact-picture img {
+    object-fit: cover;
+    height: 400px;
   }
 }
