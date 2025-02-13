@@ -228,6 +228,7 @@ footer {
 
 .contact-picture img {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  display: block;
 }
 
 @media (max-width: 800px) {
@@ -235,7 +236,7 @@ footer {
     max-width: 550px;
     display: block;
     margin-top: 48px;
-    /* margin-left: 24px; */
+    margin-left: 48px;
   }
 
   .portrait {
@@ -281,5 +282,16 @@ footer {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 550px;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 550px;
+    grid-gap: 27px;
+  }
+
+  .contact-picture img {
+    width: 100%;
   }
 }
