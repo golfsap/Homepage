@@ -1,0 +1,17 @@
+.portrait img {
+  width: 200px;
+  float: left;
+  transform: translate(-20px, -30px);
+}
+
+header {
+  max-width: 550px;
+  /* position: relative; */
+  /* display: flex; */
+  margin: 0 auto;
+}
+
+.about-me {
+  border: 2px solid;
+  /* display: flex; */
+}
